@@ -1,0 +1,9 @@
+API -> https://restcountries.com/
+
+EVOLUTIVE:
+1) Cambio tema, dare la possibilità all'utente di scegliere temi differenti
+2) Sistema punteggio, incrementa per ogni risposta corretta e, viceversa, decrementa
+3) Mostra percentuale risposte corrette
+3) Sistema risposte, risposta multipla o risposta aperta
+4) Feedback audio e visivo
+5) Esito risposta, contiene info '' 'area' e 'popolazione'
