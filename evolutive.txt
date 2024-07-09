@@ -6,4 +6,4 @@ EVOLUTIVE:
 3) Mostra percentuale risposte corrette
 3) Sistema risposte, risposta multipla o risposta aperta
 4) Feedback audio e visivo
-5) Esito risposta, contiene info '' 'area' e 'popolazione'
+5) Esito risposta, contiene info 'descrizione bandiera', 'area in km^2' e 'popolazione'
