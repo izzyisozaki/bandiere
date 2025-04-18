@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indovina la bandiera</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <div id="quiz-container">
         <h1>Flag Quiz Game</h1>
+            <p id="score">Score: <span id="score-value">0</span>/<span id="total-questions">0</span></p>
+            <p id="question">Which country does this flag belong to?</p>
         <div id="flag-container">
             <img id="flag" src="" alt="Country Flag">
         </div>
-        <div id="options-container"></div>
-        <button id="next-btn" style="display: none;">Next</button>
+        <div id="options-container">
+        </div>
         <p id="result"></p>
+
+        <button id="next-btn" style="display: none;">Next</button>
+    
     </div>
+
+    <button id="start-over-button">Start over!</button>
+    <button id="toggle-button">🌙</button>
+
+    <div id="final-popup" class="modal hidden">
+        <div class="modal-content">
+            <h2>Quiz complete!</h2>
+            <p id="final-score"></p>
+            <button id="close-popup">Chiudi</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

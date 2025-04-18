@@ -1,0 +1,78 @@
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode #quiz-container {
+    background: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.dark-mode #flag {
+    border: 1px solid #555;
+}
+
+.dark-mode #options-container button {
+    background: #0056b3;
+    color: #fff;
+}
+
+.dark-mode #options-container button:hover {
+    background: #003f7f;
+}
+
+.dark-mode #next-btn {
+    background: #1e7e34;
+}
+
+.dark-mode #next-btn:hover {
+    background: #145c2c;
+}
+
+.dark-mode #start-over-button {
+    background-color: #800000;
+    color: #fff;
+}
+
+.dark-mode #start-over-button:hover {
+    background-color: #a00000;
+}
+
+.dark-mode #toggle-button {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.dark-mode #toggle-button:hover {
+    background-color: #ddd;
+}
+
+/* modal styles */
+
+.dark-mode .modal {
+    background: rgba(0, 0, 0, 0.85); /* Slightly darker overlay */
+}
+
+.dark-mode .modal-content {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .modal-content h2 {
+    color: #ffffff;
+}
+
+.dark-mode .modal-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dark-mode .modal-content button:hover {
+    background-color: #555;
+}

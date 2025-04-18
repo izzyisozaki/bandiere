@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#flag-container {
+    width: 300px;
+    height: 200px; /* Fixed display area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #fff; /* optional: looks cleaner */
+}
+
+#flag {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* maintain aspect ratio */
+    border: 1px solid #ccc;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#flag.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#options-container {
+    width: 300px;              /* fixed width */
+    height: 200px;             /* fixed height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;          /* add vertical scroll if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* add spacing below for Next button */
+    transition: height 0.3s ease;
+}
+
+#options-container button {
+    width: 90%;
+    max-width: 250px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#options-container button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#options-container button:hover {
+    background: #0056b3;
+}
+
+#next-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background: #218838;
+}
+
+#result {
+    display: block; /* assicurati che sia visibile */
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#start-over-button {
+    background-color: red;
+    color: black;
+    padding: 10px 24px;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#start-over-button:hover {
+    color: white;
+}
+
+#toggle-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 24px;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggle-button:hover {
+    background-color: #555;
+}
+
+/* modal styles */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal:not(.hidden) .modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* aggiungi la transizione al corpo e agli elementi che cambieranno */
+body, #quiz-container, #flag, button {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
