@@ -197,13 +197,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // aggiorna il listener di eventi del pulsante di chiusura pop-up
     closePopupBtn.addEventListener('click', () => {
         finalPopup.classList.add('hidden');
-
-    // assicurati che il pulsante Start over sia ancora visibile dopo la chiusura del pop-up
-    startOverBtn.style.display = 'inline-block';
-
-    // mantieni nascosto il testo della domanda e la segnalazione dopo la chiusura del pop-up
-    questionText.style.display = 'none';
-    flagContainer.style.display = 'none';
+    
+        // assicurati che il pulsante Start over sia ancora visibile dopo la chiusura del pop-up
+        startOverBtn.style.display = 'inline-block';
+    
+        // mantieni nascosto il testo della domanda e la segnalazione dopo la chiusura del pop-up
+        question.style.display = 'none';  // Changed from questionText to question
+        flagContainer.style.display = 'none';
     });
 
     nextBtn.addEventListener('click', newQuestion);
